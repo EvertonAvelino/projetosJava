@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.codeprime.springboot_api.model.Usuario;
 import br.com.codeprime.springboot_api.repository.UsuarioRepository;
 
+
 @RestController
 @RequestMapping("/usuario")
 public class UsuarioController {

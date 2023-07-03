@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingsController {
 	
+	//Logger log = LoggerFactory.logger(GreetingsController.class);
+	
 	/**
 	 *
 	 * @param name the name to greet
@@ -21,6 +23,7 @@ public class GreetingsController {
 	@RequestMapping(value = "/olamundo/{name}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	public String greetingText(@PathVariable String name) {
+		//log.info("Testando classes");
 		return "Teste API: " + name + "!";
 	}
     
